@@ -80,3 +80,46 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* --- Mobile UX baseline --- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better tap experience */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Make large headings scale down on mobile */
+h1 {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.1;
+}
+h2 {
+  font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+  line-height: 1.15;
+}
+h3 {
+  font-size: clamp(1.2rem, 3.5vw, 1.75rem);
+  line-height: 1.2;
+}
+
+/* Optional: nicer paragraph rhythm on mobile */
+p {
+  line-height: 1.75;
+}
+
+/* Optional: ensure sections don’t feel cramped */
+@media (max-width: 640px) {
+  section {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+}

@@ -5,23 +5,22 @@ import { ThemeProvider } from '@/components/theme-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
+/* ✅ No type import needed */
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Richard Mukasa's Garage - Professional Motor Repair in Kamwokya",
-  description: 'Expert motor vehicle repair and maintenance services in Kamwokya. Quality service you can trust.',
+  description:
+    'Expert motor vehicle repair and maintenance services in Kamwokya. Quality service you can trust.',
   openGraph: {
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+    images: [{ url: 'https://bolt.new/static/og_default.png' }],
   },
   twitter: {
     card: 'summary_large_image',
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+    images: [{ url: 'https://bolt.new/static/og_default.png' }],
   },
 };
 
